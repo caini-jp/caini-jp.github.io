@@ -3256,4 +3256,29 @@ input, select, textarea {
 
 
 
+/* 共通国旗小图标：只影响这个 span，不动别的文字 */
+.flag {
+  display: inline-block;
+  width: 21px;
+  height: 14px;
+  margin-right: 6px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  vertical-align: -2px;  /* 微调，不喜欢可以删掉 */
+  border: 1.5px solid #ddd;
+  border-radius: 2px;
+}
 
+/* 各语言对应国旗（网络图标） */
+.flag-en {
+  background-image: url("https://flagcdn.com/w40/us.png");
+}
+
+.flag-jp {
+  background-image: url("https://flagcdn.com/w40/jp.png");
+}
+
+.flag-cn {
+  background-image: url("https://flagcdn.com/w40/cn.png");
+}
