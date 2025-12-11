@@ -21,7 +21,7 @@
       
     </strong></h1>
 
-    <!-- 实时时钟显示区域 -->
+    <!-- 实时时钟显示区域 --><br /><br />
     <div id="world-clock" style="color:#fff; font-family: monospace; font-size: 14px; line-height: 1.5; margin-top: 10px;"></div>
       <!-- 时钟内容由 JS 填充 -->
       <div id="weather" style="color:#fff; font-family: monospace; font-size:14px; margin-top:10px;">
@@ -40,8 +40,14 @@
   <header class="major">
     <h2>Ni - Labs :                 
     </h2>
-  
-  <h2 style="font-size: 1.4rem; color: #666666;">Project (Sensor, Camera)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;プロジェクト（センサー・カメラ）</h2>
+    <h2 style="font-size: 1.0rem; color: #666666;">
+<span style="font-weight:bold;">
+								Project </span>(Computer Vision | MR-Driving)
+								<span style="font-weight:bold;"><br />
+								プロジェクト </span>(画像認識 | 複合現実ドライビング)
+								<br /><span style="font-weight:bold;">
+								项目 </span>(图像识别 | 混合现实模拟驾驶)
+</h2>
   </header>
   <hr />
 
@@ -49,8 +55,15 @@
 
 
  <p style="color: #666666;">
-  <span style="font-size: 1.25rem; ">①. [Team work] Teleoperation of Robot Arm with Haptic Feedback</span><br />
-  
+  <span style="font-size: 0.9rem; ">①. Teleoperation of Robot Arm with Haptic Feedback [Team work]
+  <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;触覚フィードバックを用いたロボットアームの遠隔操作
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;具备触觉反馈的机器人机械臂远程操作
+</span><br />
+   <span style="font-size: 0.9rem; ">②. MR Driving
+   <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;複合現実ドライビング
+ <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;混合现实（MR）驾驶模拟
+</span><br />
+
 
 </p>
 
@@ -63,102 +76,245 @@
 
 
  <p style="color: #666666;">
-  <span style="font-size: 1.25rem; font-weight: bold;">①. [Team work] Teleoperation of Robot Arm with Haptic Feedback</span><br />
+  <span style="font-size: 1.25rem; font-weight: bold;">
+  	①. Teleoperation of Robot Arm with Haptic Feedback [Team work] <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  	触覚フィードバックを用いたロボットアームの遠隔操作
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+具备触觉反馈的机器人机械臂远程操作</span><br />
 
   <div style="margin-left: 2em;">
-    <img src="images/project-1.jpg" alt="" style="max-width: 43.5%; height: auto;"/>
+  	<img src="images/P1-1.png" alt="" style="max-width: 100%; height: auto;"/>
+   <br /> <img src="images/project-1.jpg" alt="" style="max-width: 43.5%; height: auto;"/>
     &nbsp;<img src="images/project-2.jpg" alt="" style="max-width: 27%; height: auto;"/>
 &nbsp;<img src="images/project-3.jpg" alt="" style="max-width: 27%; height: auto;"/><br />
 
-
-
-
-    <strong>1. Overview / 概要</strong><br />
+    <strong><span style="font-weight:bold;">1. Overview / 概要</span></strong><br />
     <div style="margin-left: 1em;text-align: justify;"><strong>
     When people grasping an object with hand, they can tell the object with the tactile 
-feedback, even closing their eyes.  <br /> 
+feedback, even closing their eyes.   
 In this project, we will challenge the possibility to teleoperate a robot arm with the 
 haptic sensors on both robot hands and human hands. And to verify the whether the 
 close loop feedback between the robot and human can essentially improve the 
-teleoperation efficiency. <br />
+teleoperation efficiency. 
+<br />
+手では物体を把持する際、目を閉じていても触覚フィードバックによって物体を認識することができます。
+本プロジェクトでは、人の手とロボットハンドの両方に触覚センサーを装着し、ハプティック情報を用いてロボットアームを遠隔操作する可能性に挑戦します。
+さらに、人とロボット間のクローズドループフィードバックが遠隔操作の効率を本質的に向上させるかどうかを検証します。
+<br />
+当人用手抓取物体时，即使闭上眼睛，也能通过触觉反馈来判断物体。
+本项目中，我们尝试使用安装在机械手和人手上的触觉传感器，实现机器人手臂的远程操作。
+同时，我们希望验证机器人与人之间的闭环反馈机制，是否能够从根本上提高远程操作的效率。<br />
+
+<img src="images/P1-2.png" alt="" style="max-width: 100%; height: auto;"/>
+
+<br />
+
     </strong></div>
-    <strong>2. My work</strong><br />
+    <strong><span style="font-weight:bold;">2. My Work / 担当</span></strong><br />
+
     <div style="margin-left: 1em;text-align: justify;"><strong>
-    	Device / 設備:<br />
-    Intel RealSense Camera D435i<br />
-    Intel RealSense Viewer
+    	This is a team project. My responsibility is to utilize an RealSense camera to perform real-time tracking of both the robotic arm and the target object to be grasped.
+    	<br />本プロジェクトはチーム開発であり、私は RealSense カメラを用いて、ロボットアームおよび把持対象物のリアルタイム追跡を担当しました。
+    	<br />这是一个团队项目，我负责利用 RealSense 摄像头实时追踪机械手臂和需要被抓取的目标物体。
+    	<br /><span style="font-weight:bold;">Device / 設備:</span>
+    	<br />Intel RealSense Camera D435i
     </strong></div>
 
     &nbsp;<img src="images/project-6.jpg" alt="" style="max-width: 40%; height: auto;"/>
 &nbsp;<img src="images/project-4.jpg" alt="" style="max-width: 58%; height: auto;"/><br />
-&nbsp;<img src="images/project-5.jpg" alt="" style="max-width: 48.5%; height: auto;"/>&nbsp;
-<img src="images/project-7.jpg" alt="" style="max-width: 49.1%; height: auto;"/><br />
+&nbsp;<img src="images/P1-3.png" alt="" style="max-width: 100%; height: auto;"/><br />
+<img src="images/P1-4.png" alt="" style="max-width: 100%; height: auto;"/>
 
   </div>
 </p>
+</section>
+
+
+<section id="one">
+
+<p style="color: #666666;">
+  <span style="font-size: 1.25rem; font-weight: bold;">②. MR Driving
+   <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;複合現実ドライビング
+ <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;混合现实（MR）驾驶模拟
+</span><br />
+
+  <div style="margin-left: 2em;">
+    <img src="images/P2-1.png" alt="" style="max-width: 100%; height: auto;"/><br />
+
+
+   <strong><span style="font-weight:bold;">1. Overview / 概要</span></strong><br />
+    <div style="margin-left: 1em;text-align: justify;"><strong>
+    This project is a mixed reality driving simulation built using the Oculus Quest 3, the Logitech Gran Turismo Force steering wheel, and the software Live for Speed (LFS) and Reality Mixer.
+Users can operate the virtual car in the VR environment with a real steering wheel, and during the experience, they can see their actual hands and the physical controller.
+This setup provides a near-realistic experience of driving a car on the road.
+<br />本プロジェクトは、Oculus Quest 3、Logitech Gran Turismo Force ハンコン、そして Live for Speed（LFS）および Reality Mixer を用いて構築した混合現実（MR）型のドライビングシミュレーションです。
+ユーザーは実際のハンドルを使って VR 内の車を操作でき、さらに体験中は自分の本物の手やコントローラーが視野に表示されます。
+これにより、まるで実際の道路を運転しているかのような、非常にリアルに近い走行体験を実現しています。
+<br />这个项目是利用设备Oculus Quest 3和Logitech Gran Turismo Force以及软件Live for Speed (LFS) 和Reality Mixer构建的混合现实驾驶模拟体验，用户可以使用真实的方向盘控制VR游戏中的虚拟汽车，在体验中用户可以看见自己真实的手和控制器，近乎现实地在公路上驾驶汽车。
+<br /><br />
+    </strong></div>
+    <img src="images/P2-2.png" alt="" style="max-width: 99.5%; height: auto;"/><br />
+    <img src="images/P2-7.png" alt="" style="max-width: 44.5%; height: auto;"/>&nbsp;&nbsp;
+    <img src="images/P2-4.png" alt="" style="max-width: 53.5%; height: auto;"/><br />
+    <img src="images/P2-5.png" alt="" style="max-width: 49.2%; height: auto;"/>&nbsp;&nbsp;
+    <img src="images/P2-6.png" alt="" style="max-width: 48.8%; height: auto;"/>
+
+  </div>
+
+
+<div style="margin-left: 2em;">
+
+   <strong><span style="font-weight:bold;"><br />2. About Reality Mixer</span></strong><br />
+    <div style="margin-left: 1em;text-align: justify;"><strong>
+   Reality Mixer lets you bring real objects into VR. It uses the cameras on the headset to show a real object and its surroundings in the current VR environment. It can be used at the same time as other VR software and games.
+
+<br />Think of objects like keyboard & mouse, a racing wheel, HOTAS, a clock on the wall, a drink on your desk, a phone, a tablet, a chair, etc. Also larger real objects can be used. Like the door to your room, so you can see who comes in, or the couch with your friends.
+
+<br />Bringing real objects into a virtual environment is known as 'Augmented Virtuality'.
+<br />Reality Mixer creates 'boxes of reality' which are shown in VR.
+<br />Apart from these 'camera boxes' the app also provides a mixed reality Cockpit for use with simracing and flight simulators, a Floor Viewer to quickly see the real floor around your feet and a Lap Viewer for use with seated experiences such as Big Screen. Lap Viewer can be used for quick glances at a normal (untracked) keyboard on your lap.
+
+<br />If you have a Vive or Tundra Tracker, you can attach a camera box to it so the tracked object will be visible wherever it is in your play area.
+
+<br />The real objects (and their immediate surroundings) don't have to be visible all the time. There are three activation methods:
+<br />- Activate by Proximity: Objects (camera boxes) will fade out when you are too far away. This fade out distance can be set by yourself.
+<br />- Activate by Gaze Angle: Look straight at a camera box to make it visible. Use this activation method with seated games where you have things on a table next to your seat. The activation angle and optional activation delay can be configured. Using an activation delay means you have to look at the object for a second before it starts to show itself, to prevent accidental activation. Floor Viewer and Lap Viewer both use Gaze Angle Activation by default, but can also use Proximity or ButtonPress activation.
+<br />- Activate by Button Press: Press a keyboard, mouse, gamepad, HOTAS or racing wheel button to turn on/off a camera box.
+When an object is not visible, it will not use any resources.
+
+<br />If you have an Elgato Stream Deck, or if you use Touch Portal on your phone or tablet, you can use it in VR with Reality Mixer.
+
+<br />Chroma keying (green screen) makes the background of the objects transparent so the VR world shows through. This can be useful for objects such as a racing wheel and HOTAS.
+
+    </strong></div>
+    
+  </div>
 
 
 
- 
+</p>
+
 </section>
 
 
 				<!-- Two -->
 					<section id="two">
-						<h2>Work</h2>
+						<!-- Two <h2>　</h2>-->
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="XR.html" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
-								<h3>VR / AR (Research, App)</h3>
-								<p>仮想現実 (研究, アプリ)</p>
+<a href="XR.html" class="btn-full">View Details</a>
+								<p style="font-size: 15px !important; color: #666 !important;"><span style="font-weight:bold;">
+								Research </span>(VR | Hand Tracking | Biosignal)
+								<p style="font-size: 13px !important; color: #666 !important;">
+								<span style="font-weight:bold;">
+								研究 </span>(仮想現実 | ハンドトラッキング | 生体信号)
+								<br /><span style="font-weight:bold;">
+								研究 </span>(虚拟现实 | 手部追踪 | 生理信号)
+							  </p>
+							  </p>
+							  <br />
 							</article>
+
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="project.html" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
-								<h3>Project (Sensor, Camera)</h3>
-								<p>プロジェクト（センサー・カメラ）</p>
+								<a href="project.html" class="btn-full">View Details</a>
+								<p style="font-size: 15px !important; color: #666 !important;"><span style="font-weight:bold;">
+								Project </span>(Computer Vision | MR-Driving)
+								<p style="font-size: 13px !important; color: #666 !important;">
+								<span style="font-weight:bold;">
+								プロジェクト </span>(画像認識 | 複合現実ドライビング)
+								<br /><span style="font-weight:bold;">
+								项目 </span>(图像识别 | 混合现实模拟驾驶)
+							  </p>
+							  </p>
+							  <br />
 							</article>
+
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="web.html" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
-								<h3>Web Design / Development</h3>
-								<p>ウェブデザイン・開発</p>
+								<a href="web.html" class="btn-full">View Details</a>
+								<p style="font-size: 15px !important; color: #666 !important;"><span style="font-weight:bold;">
+								Development </span>(Web | Server | Database)
+								<p style="font-size: 13px !important; color: #666 !important;">
+								<span style="font-weight:bold;">
+								開発 </span>(ウェブサイト | サーバ | データベース)
+								<br /><span style="font-weight:bold;">
+								开发 </span>(网站 | 服务器 | 数据库)
+							  </p>
+							  </p>
+							  <br />
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="cloud.html" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
-								<h3>Cloud Server Management</h3>
-								<p>クラウドサーバー管理</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="gameserver.html" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-								<h3>Game Server</h3>
-								<p>ゲームサーバー</p>
-							</article>
+
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="programming.html" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-								<h3>Programming / Tools</h3>
-								<p>プログラミング・ツール</p>
+								<a href="programming.html" class="btn-full">View Details</a>
+								<p style="font-size: 15px !important; color: #666 !important;"><span style="font-weight:bold;">
+								Programming </span>(Scripts | Mini Game)
+								<p style="font-size: 13px !important; color: #666 !important;">
+								<span style="font-weight:bold;">
+								プログラミング </span>(スクリプト | ミニゲーム)
+								<br /><span style="font-weight:bold;">
+								程序 </span>(脚本 | 小游戏)
+							  </p>
+							  </p>
+							  <br />
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="3DCAD.html" class="image fit thumb"><img src="images/thumbs/07.jpg" alt="" /></a>
-								<h3>3D CAD</h3>
-								<p>3D CAD</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="assemble.html" class="image fit thumb"><img src="images/thumbs/08.jpg" alt="" /></a>
-								<h3>Assemble & 3D Printing</h3>
-								<p>Assemble・3Dプリント</p>
-								
-							</article>
+
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="product.html" class="image fit thumb"><img src="images/thumbs/09.jpg" alt="" /></a>
-								<h3>Product Design</h3>
-								<p>プロダクトデザイン</p>
+								<a href="product.html" class="btn-full">View Details</a>
+								<p style="font-size: 15px !important; color: #666 !important;"><span style="font-weight:bold;">
+								Product Design </span>(3DCAD | 3Dprint | Modeling,Rendering)
+								<p style="font-size: 13px !important; color: #666 !important;">
+								<span style="font-weight:bold;">
+								製品設計 </span>(3DCAD | 3Dプリント | モデリング,レンダリング)
+								<br /><span style="font-weight:bold;">
+								产品设计 </span>(3DCAD | 3D打印 | 建模渲染)
+							  </p>
+							  </p>
 							</article>
+
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="graphic.html" class="image fit thumb"><img src="images/thumbs/10.jpg" alt="" /></a>
-								<h3>Graphic Design</h3>
-								<p>グラフィックデザイン</p>
+								<a href="law.html" class="image fit thumb"><img src="images/thumbs/11.png" alt="" /></a>
+								<a href="law.html" class="btn-full">View Details</a>
+								<p style="font-size: 15px !important; color: #666 !important;"><span style="font-weight:bold;">
+								Law </span>(Product Liability Law | AI/Self-driving-related)
+								<p style="font-size: 13px !important; color: #666 !important;">
+								<span style="font-weight:bold;">
+								法学 </span>(製造物責任 | 人工知能/自動運転)
+								<br /><span style="font-weight:bold;">
+								法学 </span>(产品责任 | 人工智能/自动驾驶)
+							  </p>
+							  </p>
 							</article>
 						</div>
+
+
+						<style>
+/* 长条按钮样式 */
+.btn-full {
+    display: block;               /* 让按钮撑满与图片同宽 */
+    width: 60%;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 2px 0;
+    margin-top: 0px;
+    border-radius: 6px;
+    font-size: 14px;
+    text-decoration: none;        /* 去掉链接下划线 */
+    transition: 0.2s;
+}
+.btn-full:hover {
+    background: #333;
+}
+
+.image.fit.thumb {
+    margin-bottom: 2px;   /* 原来可能是 1.5em 左右 */
+}
+</style>
+
 
 						<!-- 
 						<ul class="actions">
@@ -572,33 +728,29 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
   function updateWorldClocks() {
     const now = new Date();
 
-    // 时间格式配置：24小时制，时分秒
     const options = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
 
-    // 各时区时间，使用 Intl.DateTimeFormat 自动处理时区和夏令时
-    
+    // 各时区（已将美东换成硅谷 PT）
     const cstTime = new Intl.DateTimeFormat('en-US', { ...options, timeZone: 'Asia/Shanghai' }).format(now);
     const jstTime = new Intl.DateTimeFormat('en-US', { ...options, timeZone: 'Asia/Tokyo' }).format(now);
-    const estTime = new Intl.DateTimeFormat('en-US', { ...options, timeZone: 'America/New_York' }).format(now);
+    const ptTime  = new Intl.DateTimeFormat('en-US', { ...options, timeZone: 'America/Los_Angeles' }).format(now);
 
-    // 构造内容，英日双语，一行一个时区
+    // 构造内容
     const clockHtml = `
       日本標準時（JST）: ${jstTime}<br>
-    	米国東部標準時（EST）: ${estTime}<br>
+      米国太平洋標準時（PT）: ${ptTime}<br>
       中国標準時（CST）: ${cstTime}<br>
-    	
     `;
 
     document.getElementById('world-clock').innerHTML = clockHtml;
   }
 
-  // 初始化并每秒更新时间
   updateWorldClocks();
   setInterval(updateWorldClocks, 1000);
 </script>
 
+
 <script>
-  // 天气小贴士函数，返回英日双语提示
   function getWeatherTip(main) {
     switch(main.toLowerCase()) {
       case 'clear':
@@ -619,9 +771,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
     }
   }
 
-  // 获取天气数据并显示
   async function fetchWeather(city) {
-    const apiKey = 'fa540d847b8eab948b25ace6cadcf2de';  // 替换成你的API Key
+    const apiKey = 'fa540d847b8eab948b25ace6cadcf2de';
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=ja`;
 
     try {
@@ -633,7 +784,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
       const descriptionEn = data.weather[0].main;
       const descriptionJp = data.weather[0].description;
       const temp = data.main.temp.toFixed(1);
-      const humidity = data.main.humidity;
       const tip = getWeatherTip(descriptionEn);
 
       return `<strong>${city}</strong><br>` +
@@ -641,23 +791,21 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
        `気温 / Temperature: ${temp}°C<br>` +
        `<em style="color:#ffd700;">${tip}</em>`;
 
-
     } catch (error) {
       console.error('Fetch weather error:', error);
       return `<strong>${city}</strong><br>天気情報を取得できません`;
     }
   }
 
+  // ✅ 只保留东京
   async function updateWeather() {
     const tokyoWeather = await fetchWeather('Tokyo');
-    const aizuWeather = await fetchWeather('Ōtera');
 
-    document.getElementById('weather').innerHTML =
-      tokyoWeather + '<br>' + aizuWeather;
+    document.getElementById('weather').innerHTML = tokyoWeather;
   }
 
   updateWeather();
-  setInterval(updateWeather, 10 * 60 * 1000); // 每10分钟更新一次
+  setInterval(updateWeather, 10 * 60 * 1000);
 </script>
 
 	</body>

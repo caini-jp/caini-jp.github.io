@@ -21,7 +21,7 @@
       
     </strong></h1>
 
-    <!-- 实时时钟显示区域 -->
+    <!-- 实时时钟显示区域 --><br /><br />
     <div id="world-clock" style="color:#fff; font-family: monospace; font-size: 14px; line-height: 1.5; margin-top: 10px;"></div>
       <!-- 时钟内容由 JS 填充 -->
       <div id="weather" style="color:#fff; font-family: monospace; font-size:14px; margin-top:10px;">
@@ -41,19 +41,21 @@
     <h2>Ni - Labs :                 
     </h2>
   
-  <h2 style="font-size: 1.4rem; color: #666666;">VR / AR (Research, App)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;仮想現実 (研究, アプリ)</h2>
+  <h2 style="font-size: 1.0rem; color: #666666;">
+  	<span style="font-weight:bold;">Research </span>( Virtual Reality (VR) | Hand Tracking | Biosignal )
+  <br /><span style="font-weight:bold;">研究 </span>( 仮想現実 | ハンドトラッキング | 生体信号 )
+<br /><span style="font-weight:bold;">
+								研究 </span>( 虚拟现实 | 手部追踪 | 生理信号 )
+							</h2>
   </header>
   <hr />
 
 
-
-
- <p style="color: #666666;">
-  <span style="font-size: 1.25rem; ">①. [Research] Simulating alcohol effect in XR</span><br />
-  <span style="font-size: 1.25rem; ">②. [Game] Monster vs. Zombies
+<p style="color: #666666;">
+  <span style="font-size: 0.9rem; ">- (English) Changes in Motor Performance and Physiological Signals under VR-Based Alcohol Effect Simulation
+  <br />- (日本語) VRアルコール影響のシミュレーションにおける動作および生体信号の変化
+<br />- (中文) 在VR醉酒模拟下的动作和生理信号的变化
 </span><br />
-<span style="font-size: 1.25rem; ">③. [Game] Money Dragon
-</span>
 
 </p>
 
@@ -63,30 +65,89 @@
 
 
 
-
-
  <p style="color: #666666;">
-  <span style="font-size: 1.25rem; font-weight: bold;">①. [Research] Simulating alcohol effect in XR</span><br />
+ 	<span style="font-size: 1.25rem; font-weight: bold;">(English)</span><br />
+  <span style="font-size: 1.25rem; font-weight: bold;">Changes in Motor Performance and Physiological Signals under VR-Based Alcohol Effect Simulation</span><br />
 
   <div style="margin-left: 2em;">
-    <img src="images/Research1.jpg" alt="" style="max-width: 49%; height: auto;"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/Research2.jpg" alt="" style="max-width: 49%; height: auto;"/><br />
 
-    <strong>1. Overview / 概要</strong><br />
+    <strong><span style="font-weight:bold;">1. Background</span></strong><br />
     <div style="margin-left: 1em;text-align: justify;"><strong>
-    Research question: What is the impact of XR simulated alcohol intoxication on perceived personal health and understanding of alcohol impact?<br />
-    This research is planned to simulate the effects of alcohol intoxication in XR with VR headset (Meta Quest 3). It focuses on simulating vision, hearing (auditory discrimination impairment) and coordination impairments using Unity, including the vision impairment like blurriness, delayed feedback, and the coordination impairment like delayed movement, delayed hand tracking. User study includes interactive tasks, followed by surveys to evaluate the simulation’s educational value.<br />
-    </strong></div>
-    <strong>2. Objectives / 研究目的</strong><br />
+    Immersive technologies can potentially improve personal health with realistic environment simulation. For example, using VR to reduce stress, support physical rehabilitation, improve attention recovery. Additionally simulating disease symptoms, to raise public awareness and empathy [1]. 
+<br />　In this research, we build a VR experience that improves people’s perception of personal health. One of the applications is understanding the impact of alcohol consumption [2] on vision impairment, motor coordination [3], and cognitive impact. Studies show that even moderate drinking can lead to color vision loss, reduce attention awareness, and long-term visual damage . Motor coordination impairment may persist even after sobriety.
+However, most existing simulations mainly focus on simulating vision impairment and drunk driving. This study proposes to combine multi-sensory (vision, hearing) and motor impairments to raise awareness of alcohol's impact on perceived health.
+<br />
+　This research aims to:
+Improve understanding of alcohol’s effects on vision, hearing, and motor coordination using VR simulation.
+
+</strong></div>
+
+<br /><strong><span style="font-weight:bold;">2. VR Simulation</span></strong><br />
     <div style="margin-left: 1em;text-align: justify;"><strong>
-    The aim of this research is to help people understand the effects of alcohol abuse, increasing their awareness of the risks of alcohol, and the goal is that this XR simulation would be a preventative and educational resource.<br />
+    In VR, the task requires the user to use a VR controller holding a virtual stick and pass through a virtual wire.If the stick touches the wire, it will be considered a fault. The aim of the game is to complete the path without touching the wire. During the task, the user performs actions such as walking, bending, squatting, and stretching to complete the task. The purpose of this is to enhance their awareness of how alcohol affects physical balance.
+<br />
+　If the stick touches the wire, a warning sound will be triggered and 1 point will be deducted from the total score (100 points in start). If the stick remains in touch with the wire, additional 1 point will be deducted per second. The game ends when the stick passes through the wire, final score and the stick’s movement path will be displayed. The aim of the game is to complete the path with as few touches as possible. 
+
+
+</strong></div>
+<br />　<img src="images/re-1.png" alt="" style="max-width: 80%; height: auto;"/><br /><br />
+
+    <div style="margin-left: 1em;text-align: justify;"><strong>
+    We simulate the effect of alcohol in three levels:
+<br />L1) Visual effect: blur + camera shake
+<br />L2) Audio effect: noise + heartbeat sound
+<br />L3) Controller effect: shake + delayed response<br />
+
     </strong></div>
 
-    <strong>3. Schedule / 日程</strong><br />
+    <br />　<img src="images/re-2.png" alt="" style="max-width: 75%; height: auto;"/><br /><br />
+
+<strong><span style="font-weight:bold;">3. User Study Evaluation</span></strong><br />
+    <div style="margin-left: 1em;text-align: justify;"><strong>
+    <span style="font-weight:bold;">Research questions:</span>
+<br />RQ1: How does VR simulated alcohol intoxication affect perceived personal health? 
+<br />RQ2: In VR simulated alcohol intoxication If the human body exhibits physiological responses similar to real alcohol intoxication?
+<br /><span style="font-weight:bold;">Hypotheses:</span>
+<br />We expect that increasing the level of alcohol simulation will lead to lower task accuracy, longer completion time, and higher workload and stress scores.
+<br />H1A: task accuracy will be lower in visual effect comparing to baseline
+<br />H1B: completion time will be lower in visual effect comparing to baseline
+<br />H1C: task workload will be higher in visual effect comparing to baseline
+<br />H1D: stress will be higher in visual effect comparing to baseline
+<br />H2A: task accuracy will be lower in visual+audio effect comparing to visual only
+<br />H2B: completion time will be lower in visual+audio effect comparing to visual only
+<br />H2C: task workload will be higher in visual+audio effect comparing to visual only
+<br />H2D: stress will be higher in visual+audio effect comparing to visual only
+
+</strong></div>
+
+<br />　<img src="images/re-3.png" alt="" style="max-width: 80%; height: auto;"/><br /><br />
+
+    <div style="margin-left: 1em;text-align: justify;"><strong>
+<span style="font-weight:bold;">Independent Variables - Conditions:</span>
+<br />C1) Baseline – no alcohol simulation        
+<br />C2) Low level – visual effect only
+<br />C3) Medium level – visual + audio  + control effects
+<br /><span style="font-weight:bold;">Objective measures: </span>
+<br />M1) accuracy (number of times touching the wire)
+<br />M2) time completion of the path
+<br />M3) heart rate 
+<br /><span style="font-weight:bold;">Subjective measures: </span>
+<br />M4) NASA TLX questionnaire              
+<br />M5) STAI6 questionnaire
+<br />M6) Virtual Embodiment Questionnaire (VEQ)
+<br />M7) Alcohol Awareness Questionnaire
+<br /><span style="font-weight:bold;">Expected Contributions</span>
+<br />1) VR application to to simulate alcohol effects
+<br />2) User study evaluation validating the VR application
+
+</strong></div>
+
+    <br /><strong><span style="font-weight:bold;">4. Schedule</span></strong><br />
     <div style="margin-left: 1em;text-align: justify;"><strong>
     	<img src="images/Research3.jpg" alt="" style="max-width: 100%; height: auto;"/><br />
     </strong></div>
 
-    <strong>4. Progress / 進捗</strong><br />
+    <br /><strong><span style="font-weight:bold;">5. App</span></strong><br />
     <div style="margin-left: 1em;text-align: justify;">
     <a href="https://github.com/caini-jp/caini-jp.github.io/releases/download/v1.0.0/ver0629-31.apk" class="button">
     Quest 3 [ ver0629-31.apk ] (NEW)
@@ -100,141 +161,377 @@
     </div>
   </div>
 </p>
-
-<hr />
-
-
-
-
-<p style="color: #666666;">
-  <span style="font-size: 1.25rem; font-weight: bold;">②. [Game] Monster vs. Zombies
-</span><br />
-
-  <div style="margin-left: 2em;">
-    <img src="images/xrgame1-1.jpg" alt="" style="max-width: 32%; height: auto;"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/xrgame1-2.jpg" alt="" style="max-width: 32%; height: auto;"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/xrgame1-3.jpg" alt="" style="max-width: 32%; height: auto;"/><br />
-
-    <strong>1. Overview / 概要</strong><br />
-    <div style="margin-left: 1em;text-align: justify;"><strong>
-    - (MR Game on Quest)<br />
-- Developed with: Unity<br />
-- Open-Source Project: github.com/immersive-insiders/StarterProjectiders/StarterProject<br />
-- I tried to enable character movement with hand tracking.
-
-    </strong></div>
-
-    <strong>2. Download / ダウンロード</strong><br />
-    <div style="margin-left: 1em;text-align: justify;">
-    <a href="https://github.com/caini-jp/caini-jp.github.io/releases/download/v1.0.0/MvZ-version-2.apk" class="button">
-    Quest 3 [ MvZ-version-2.apk ] (NEW)
-    </a><br />
-    <a href="https://github.com/caini-jp/caini-jp.github.io/releases/download/v1.0.0/MvZ-version-1.1.apk" class="button">
-    Quest 3 [ MvZ-version-1.1.apk ]
-    </a><br />
-    <a href="https://github.com/caini-jp/caini-jp.github.io/releases/download/v1.0.0/MvZ-version-1.apk" class="button">
-    Quest 3 [ MvZ-version-1.apk ]
-    </a>
-    </div>
-  </div>
-</p>
-
-<hr />
-
-
-
-
-
-<p style="color: #666666;">
-  <span style="font-size: 1.25rem; font-weight: bold;">③. [Game] Money Dragon
-</span><br />
-
-  <div style="margin-left: 2em;">
-    <img src="images/xrgame2-1.jpg" alt="" style="max-width: 32%; height: auto;"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/xrgame2-2.jpg" alt="" style="max-width: 32%; height: auto;"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/xrgame2-3.jpg" alt="" style="max-width: 32%; height: auto;"/><br />
-
-    <strong>1. Overview / 概要</strong><br />
-    <div style="margin-left: 1em;text-align: justify;"><strong>
-    - (AR Game on Android Phone)<br />
-- Developed with: Unity<br />
-- Open-Source Project:
-youtube.com/watch?v=GfS72wqKQ_g&t=35sUTES!! (Beginner Friendly)<br />
-- I added an image of 1,000-yen to the Reference Image Library, allowing players to summon a dragon by scanning a 1,000-yen bill.
-
-    </strong></div>
-
-    <strong>2. Download / ダウンロード</strong><br />
-    <div style="margin-left: 1em;text-align: justify;">
-    <a href="https://github.com/caini-jp/caini-jp.github.io/releases/download/v1.0.0/MD-version-2.apk" class="button">
-    Quest 3 [ MD-version-2.apk ] (NEW)
-    </a><br />
-    <a href="https://github.com/caini-jp/caini-jp.github.io/releases/download/v1.0.0/MD-version-1.apk" class="button">
-    Quest 3 [ MD-version-1.apk ]
-    </a>
-    </div>
-  </div>
-</p>
-
-
-
-
-  
 </section>
+
+
+
+
+
+<section id="one">
+
+
+<p style="color: #666666;">
+  <span style="font-size: 1.25rem; font-weight: bold;">(日本語)</span><br />
+  <span style="font-size: 1.25rem; font-weight: bold;">VRアルコール影響のシミュレーションにおける動作および生体信号の変化</span><br />
+
+  <div style="margin-left: 2em;">
+
+    <strong><span style="font-weight:bold;">1. 背景</span></strong><br />
+    <div style="margin-left: 1em;text-align: justify;"><strong>
+    近年、没入型技術は、現実に近い環境を再現することで、個人の健康を向上させる可能性があるとされています。例えば、VR を用いたストレス軽減、身体リハビリの支援、注意力回復の促進、さらには疾病症状の再現による啓発や共感の向上などが挙げられます [1]。
+<br />
+　本研究では、VR 体験を通して自己の健康に対する認知を高めることを目的としています。その応用例として、アルコール摂取が視覚障害、運動協調、認知機能に与える影響 [2][3] を理解してもらうことを目指します。先行研究では、少量の飲酒でも色覚低下、注意力の低下、長期的な視覚障害が発生し得ること、また運動協調の低下は酔いが覚めた後も残存する可能性が示されています。しかし、既存の多くのシミュレーションは視覚障害や飲酒運転の再現に偏っています。本研究では、視覚・聴覚・運動の複合的な感覚障害を組み合わせ、アルコールが身体認知に与える影響についてより深い理解を促すことを提案します。
+<br />
+　研究目的：VR シミュレーションを用いて、アルコールが視覚・聴覚・運動協調に与える影響の理解を高めること。
+</strong></div>
+
+<br /><strong><span style="font-weight:bold;">2. VR シミュレーション</span></strong><br />
+    <div style="margin-left: 1em;text-align: justify;"><strong>
+    VR 内の課題では、ユーザは VR コントローラで仮想のスティックを操作し、ワイヤー状のコースを触れずに通過させます。スティックがワイヤーに触れるとミスとなります。目標は、できるだけ触れずにコースを完走することです。
+課題中、ユーザは歩行、前屈、しゃがむ、体を伸ばすなどの動作を行います。これにより、アルコールが身体のバランスや動作に与える影響を自覚しやすくなります。
+<br />
+　スティックがワイヤーに触れると警告音が鳴り、初期得点 100 点から 1 点が減点されます。触れ続けた場合は、1 秒ごとに追加で 1 点減点されます。コースを完走するとゲームが終了し、最終スコアとスティックの軌跡が表示されます。
+
+</strong></div>
+<br />　<img src="images/re-1.png" alt="" style="max-width: 80%; height: auto;"/><br /><br />
+
+    <div style="margin-left: 1em;text-align: justify;"><strong>
+アルコール影響のレベル設定
+<br />
+L1：視覚効果（ブラー + カメラシェイク）
+<br />
+L2：聴覚効果（ノイズ + 心拍音）
+<br />
+L3：コントローラ効果（振動 + 入力遅延）
+    </strong></div>
+
+    <br />　<img src="images/re-2.png" alt="" style="max-width: 75%; height: auto;"/><br /><br />
+
+<strong><span style="font-weight:bold;">3. ユーザスタディ評価</span></strong><br />
+    <div style="margin-left: 1em;text-align: justify;"><strong>
+    <span style="font-weight:bold;">研究質問</span>
+<br />
+RQ1: VR による飲酒状態の再現は、個人の健康認知にどのような影響を与えるか？
+<br />
+RQ2: VR 上での酩酊状態は、実際の飲酒に類似した生理的反応を引き起こすか？
+<br />
+<span style="font-weight:bold;">仮説</span>
+<br />アルコールシミュレーションのレベルが上がるほど、
+正確性は低下し、タスク時間は増加し、ワークロードとストレスは上昇すると予測しています。
+<br />
+H1A–H1D: 低レベル（視覚のみ）はベースラインよりも正確性低下、時間増加、ワークロード増加、ストレス増加を引き起こす
+<br />
+H2A–H2D: 中レベル（視覚＋聴覚＋操作遅延）は視覚のみよりさらに悪化する
+
+</strong></div>
+
+<br />　<img src="images/re-3.png" alt="" style="max-width: 80%; height: auto;"/><br /><br />
+
+    <div style="margin-left: 1em;text-align: justify;"><strong>
+
+<span style="font-weight:bold;">独立変数（条件）</span>
+<br />
+C1: ベースライン（アルコール効果なし）
+<br />
+C2: 低レベル（視覚効果のみ）
+<br />
+C3: 中レベル（視覚＋聴覚＋操作効果の複合）
+<br />
+<span style="font-weight:bold;">客観的指標</span>
+<br />
+M1: 正確性（接触回数）
+<br />
+M2: コース完了時間
+<br />
+M3: 心拍数
+<br />
+<span style="font-weight:bold;">主観的指標</span>
+<br />
+M4: NASA-TLX
+<br />
+M5: STAI-6
+<br />
+M6: Virtual Embodiment Questionnaire（VEQ）
+<br />
+M7: アルコール認知アンケート
+<br />
+<span style="font-weight:bold;">期待される貢献</span>
+<br />
+アルコール影響を再現する VR アプリケーションの開発
+<br />
+ユーザスタディによるその有効性の検証
+
+</strong></div>
+
+    <br /><strong><span style="font-weight:bold;">4. 日程</span></strong><br />
+    <div style="margin-left: 1em;text-align: justify;"><strong>
+    	<img src="images/Research3.jpg" alt="" style="max-width: 100%; height: auto;"/><br />
+    </strong></div>
+
+    <br /><strong><span style="font-weight:bold;">5. アプリ</span></strong><br />
+    <div style="margin-left: 1em;text-align: justify;">
+    <a href="https://github.com/caini-jp/caini-jp.github.io/releases/download/v1.0.0/ver0629-31.apk" class="button">
+    Quest 3 [ ver0629-31.apk ] (NEW)
+    </a><br />
+    <a href="https://github.com/caini-jp/caini-jp.github.io/releases/download/v1.0.0/ver0625-30.apk" class="button">
+    Quest 3 [ ver0625-30.apk ]
+    </a><br />
+    <a href="https://github.com/caini-jp/caini-jp.github.io/releases/download/v1.0.0/ver0618-29.apk" class="button">
+    Quest 3 [ ver0618-29.apk ]
+    </a>
+    </div>
+  </div>
+</p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="one">
+
+<p style="color: #666666;"> <span style="font-size: 1.25rem; font-weight: bold;">(中文)</span><br /> <span style="font-size: 1.25rem; font-weight: bold;">在VR醉酒模拟下的动作和生理信号的变化</span><br /> <div style="margin-left: 2em;">
+<strong><span style="font-weight:bold;">1. 背景</span></strong><br />
+<div style="margin-left: 1em;text-align: justify;"><strong>
+沉浸式技术可以通过逼真的环境模拟来提升个人健康。例如，使用 VR 来减轻压力、支持身体康复、改善注意力恢复，以及通过模拟疾病症状来提升公众意识和共情能力 [1]。 
+
+
+<br />　在本研究中，我们构建了一种能够提升人们健康认知的 VR 体验。其中一个应用场景，是帮助人们理解酒精摄入 [2] 对视觉损伤、运动协调能力 [3] 以及认知功能的影响。研究表明，即使是适量饮酒，也可能导致色觉丧失、注意力下降以及长期的视力损伤。运动协调能力的损害甚至可能在酒醒之后仍然持续。
+然而，现有的大多数模拟主要集中在视觉损伤和酒后驾驶的情景上。本研究提出结合多感官（视觉、听觉）以及运动功能受损的表现，以提升人们对酒精对健康影响的认知。
+<br />
+　本研究的目标是：
+通过 VR 模拟，提高对酒精对视觉、听觉及运动协调影响的理解。
+
+</strong></div>
+
+<br /><strong><span style="font-weight:bold;">2. VR 模拟</span></strong><br />
+<div style="margin-left: 1em;text-align: justify;"><strong>
+在 VR 中，任务要求用户使用 VR 控制器握住虚拟探针，并沿虚拟电线前进。如果探针碰到电线，则被视为一次失误。游戏的目标是在不触碰电线的情况下完成整条路径。在任务过程中，用户需要进行走路、弯腰、下蹲、伸展等动作，以此来增强他们对酒精对身体平衡影响的意识。
+<br />
+　如果探针触碰到电线，将触发警告声音，并从总分中扣除 1 分（初始分数为 100 分）。如果探针持续接触电线，则每秒额外再扣 1 分。当探针成功通过电线后，游戏结束，并显示最终得分以及探针的运动轨迹。游戏的目标是尽可能减少触碰电线的次数。
+
+</strong></div>
+<br />　<img src="images/re-1.png" alt="" style="max-width: 80%; height: auto;"/><br /><br />
+
+<div style="margin-left: 1em;text-align: justify;"><strong>
+我们将酒精效果分为三个等级进行模拟：
+
+
+<br />L1) 视觉效果：画面模糊 + 视角晃动
+<br />L2) 听觉效果：噪声 + 心跳声
+<br />L3) 控制器效果：震动 + 延迟反应<br />
+
+</strong></div>
+
+<br />　<img src="images/re-2.png" alt="" style="max-width: 75%; height: auto;"/><br /><br />
+
+
+<strong><span style="font-weight:bold;">3. 用户研究评估</span></strong><br />
+<div style="margin-left: 1em;text-align: justify;"><strong>
+<span style="font-weight:bold;">研究问题：</span>
+<br />RQ1: VR 中模拟的酒精醉酒状态会如何影响个体对自身健康的主观认知？
+<br />RQ2: 在 VR 模拟酒精醉酒的情况下，人体是否会表现出与真实醉酒相似的生理反应？
+<br /><span style="font-weight:bold;">研究假设：</span>
+<br />我们预期，提高酒精模拟的等级会导致任务准确率下降、完成时间延长，以及工作负荷和压力评分上升。
+<br />H1A：与基线相比，在仅视觉效果条件下任务准确率会更低
+<br />H1B：与基线相比，在仅视觉效果条件下任务完成时间会更长
+<br />H1C：与基线相比，在仅视觉效果条件下任务工作负荷会更高
+<br />H1D：与基线相比，在仅视觉效果条件下压力水平会更高
+<br />H2A：与仅视觉效果相比，在视觉+听觉条件下任务准确率会更低
+<br />H2B：与仅视觉效果相比，在视觉+听觉条件下任务完成时间会更长
+<br />H2C：与仅视觉效果相比，在视觉+听觉条件下任务工作负荷会更高
+<br />H2D：与仅视觉效果相比，在视觉+听觉条件下压力水平会更高
+
+</strong></div>
+
+<br />　<img src="images/re-3.png" alt="" style="max-width: 80%; height: auto;"/><br /><br />
+
+<div style="margin-left: 1em;text-align: justify;"><strong>
+
+
+<span style="font-weight:bold;">自变量 - 条件：</span>
+<br />C1) 基线条件 – 无酒精模拟
+<br />C2) 低等级 – 仅视觉效果
+<br />C3) 中等级 – 视觉 + 听觉 + 控制效果
+<br /><span style="font-weight:bold;">客观指标：</span>
+<br />M1) 准确率（探针触碰电线的次数）
+<br />M2) 完成整条路径所用时间
+<br />M3) 心率
+<br /><span style="font-weight:bold;">主观指标：</span>
+<br />M4) NASA TLX 问卷
+<br />M5) STAI6 问卷
+<br />M6) 虚拟具身化问卷（VEQ）
+<br />M7) 酒精认知问卷
+<br /><span style="font-weight:bold;">预期贡献：</span>
+<br />1) 一个用于模拟酒精影响的 VR 应用
+<br />2) 通过用户研究评估，对该 VR 应用进行验证
+
+</strong></div>
+
+<br /><strong><span style="font-weight:bold;">4. 日程</span></strong><br />
+<div style="margin-left: 1em;text-align: justify;"><strong>
+	<img src="images/Research3.jpg" alt="" style="max-width: 100%; height: auto;"/><br />
+</strong></div>
+
+<br /><strong><span style="font-weight:bold;">5. 应用程序</span></strong><br />
+<div style="margin-left: 1em;text-align: justify;">
+<a href="https://github.com/caini-jp/caini-jp.github.io/releases/download/v1.0.0/ver0629-31.apk" class="button">
+Quest 3 [ ver0629-31.apk ]（最新）
+</a><br />
+<a href="https://github.com/caini-jp/caini-jp.github.io/releases/download/v1.0.0/ver0625-30.apk" class="button">
+Quest 3 [ ver0625-30.apk ]
+</a><br />
+<a href="https://github.com/caini-jp/caini-jp.github.io/releases/download/v1.0.0/ver0618-29.apk" class="button">
+Quest 3 [ ver0618-29.apk ]
+</a>
+</div>
+
+</div> </p> </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 				<!-- Two -->
 					<section id="two">
-						<h2>Work</h2>
+						<!-- Two <h2>　</h2>-->
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="XR.html" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
-								<h3>VR / AR (Research, App)</h3>
-								<p>仮想現実 (研究, アプリ)</p>
+<a href="XR.html" class="btn-full">View Details</a>
+								<p style="font-size: 15px !important; color: #666 !important;"><span style="font-weight:bold;">
+								Research </span>(VR | Hand Tracking | Biosignal)
+								<p style="font-size: 13px !important; color: #666 !important;">
+								<span style="font-weight:bold;">
+								研究 </span>(仮想現実 | ハンドトラッキング | 生体信号)
+								<br /><span style="font-weight:bold;">
+								研究 </span>(虚拟现实 | 手部追踪 | 生理信号)
+							  </p>
+							  </p>
+							  <br />
 							</article>
+
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="project.html" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
-								<h3>Project (Sensor, Camera)</h3>
-								<p>プロジェクト（センサー・カメラ）</p>
+								<a href="project.html" class="btn-full">View Details</a>
+								<p style="font-size: 15px !important; color: #666 !important;"><span style="font-weight:bold;">
+								Project </span>(Computer Vision | MR-Driving)
+								<p style="font-size: 13px !important; color: #666 !important;">
+								<span style="font-weight:bold;">
+								プロジェクト </span>(画像認識 | 複合現実ドライビング)
+								<br /><span style="font-weight:bold;">
+								项目 </span>(图像识别 | 混合现实模拟驾驶)
+							  </p>
+							  </p>
+							  <br />
 							</article>
+
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="web.html" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
-								<h3>Web Design / Development</h3>
-								<p>ウェブデザイン・開発</p>
+								<a href="web.html" class="btn-full">View Details</a>
+								<p style="font-size: 15px !important; color: #666 !important;"><span style="font-weight:bold;">
+								Development </span>(Web | Server | Database)
+								<p style="font-size: 13px !important; color: #666 !important;">
+								<span style="font-weight:bold;">
+								開発 </span>(ウェブサイト | サーバ | データベース)
+								<br /><span style="font-weight:bold;">
+								开发 </span>(网站 | 服务器 | 数据库)
+							  </p>
+							  </p>
+							  <br />
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="cloud.html" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
-								<h3>Cloud Server Management</h3>
-								<p>クラウドサーバー管理</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="gameserver.html" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-								<h3>Game Server</h3>
-								<p>ゲームサーバー</p>
-							</article>
+
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="programming.html" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-								<h3>Programming / Tools</h3>
-								<p>プログラミング・ツール</p>
+								<a href="programming.html" class="btn-full">View Details</a>
+								<p style="font-size: 15px !important; color: #666 !important;"><span style="font-weight:bold;">
+								Programming </span>(Scripts | Mini Game)
+								<p style="font-size: 13px !important; color: #666 !important;">
+								<span style="font-weight:bold;">
+								プログラミング </span>(スクリプト | ミニゲーム)
+								<br /><span style="font-weight:bold;">
+								程序 </span>(脚本 | 小游戏)
+							  </p>
+							  </p>
+							  <br />
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="3DCAD.html" class="image fit thumb"><img src="images/thumbs/07.jpg" alt="" /></a>
-								<h3>3D CAD</h3>
-								<p>3D CAD</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="assemble.html" class="image fit thumb"><img src="images/thumbs/08.jpg" alt="" /></a>
-								<h3>Assemble & 3D Printing</h3>
-								<p>Assemble・3Dプリント</p>
-								
-							</article>
+
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="product.html" class="image fit thumb"><img src="images/thumbs/09.jpg" alt="" /></a>
-								<h3>Product Design</h3>
-								<p>プロダクトデザイン</p>
+								<a href="product.html" class="btn-full">View Details</a>
+								<p style="font-size: 15px !important; color: #666 !important;"><span style="font-weight:bold;">
+								Product Design </span>(3DCAD | 3Dprint | Modeling,Rendering)
+								<p style="font-size: 13px !important; color: #666 !important;">
+								<span style="font-weight:bold;">
+								製品設計 </span>(3DCAD | 3Dプリント | モデリング,レンダリング)
+								<br /><span style="font-weight:bold;">
+								产品设计 </span>(3DCAD | 3D打印 | 建模渲染)
+							  </p>
+							  </p>
 							</article>
+
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="graphic.html" class="image fit thumb"><img src="images/thumbs/10.jpg" alt="" /></a>
-								<h3>Graphic Design</h3>
-								<p>グラフィックデザイン</p>
+								<a href="law.html" class="image fit thumb"><img src="images/thumbs/11.png" alt="" /></a>
+								<a href="law.html" class="btn-full">View Details</a>
+								<p style="font-size: 15px !important; color: #666 !important;"><span style="font-weight:bold;">
+								Law </span>(Product Liability Law | AI/Self-driving-related)
+								<p style="font-size: 13px !important; color: #666 !important;">
+								<span style="font-weight:bold;">
+								法学 </span>(製造物責任 | 人工知能/自動運転)
+								<br /><span style="font-weight:bold;">
+								法学 </span>(产品责任 | 人工智能/自动驾驶)
+							  </p>
+							  </p>
 							</article>
 						</div>
+
+
+						<style>
+/* 长条按钮样式 */
+.btn-full {
+    display: block;               /* 让按钮撑满与图片同宽 */
+    width: 60%;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 2px 0;
+    margin-top: 0px;
+    border-radius: 6px;
+    font-size: 14px;
+    text-decoration: none;        /* 去掉链接下划线 */
+    transition: 0.2s;
+}
+.btn-full:hover {
+    background: #333;
+}
+
+.image.fit.thumb {
+    margin-bottom: 2px;   /* 原来可能是 1.5em 左右 */
+}
+</style>
+
 
 						<!-- 
 						<ul class="actions">
@@ -648,33 +945,29 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
   function updateWorldClocks() {
     const now = new Date();
 
-    // 时间格式配置：24小时制，时分秒
     const options = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
 
-    // 各时区时间，使用 Intl.DateTimeFormat 自动处理时区和夏令时
-    
+    // 各时区（已将美东换成硅谷 PT）
     const cstTime = new Intl.DateTimeFormat('en-US', { ...options, timeZone: 'Asia/Shanghai' }).format(now);
     const jstTime = new Intl.DateTimeFormat('en-US', { ...options, timeZone: 'Asia/Tokyo' }).format(now);
-    const estTime = new Intl.DateTimeFormat('en-US', { ...options, timeZone: 'America/New_York' }).format(now);
+    const ptTime  = new Intl.DateTimeFormat('en-US', { ...options, timeZone: 'America/Los_Angeles' }).format(now);
 
-    // 构造内容，英日双语，一行一个时区
+    // 构造内容
     const clockHtml = `
       日本標準時（JST）: ${jstTime}<br>
-    	米国東部標準時（EST）: ${estTime}<br>
+      米国太平洋標準時（PT）: ${ptTime}<br>
       中国標準時（CST）: ${cstTime}<br>
-    	
     `;
 
     document.getElementById('world-clock').innerHTML = clockHtml;
   }
 
-  // 初始化并每秒更新时间
   updateWorldClocks();
   setInterval(updateWorldClocks, 1000);
 </script>
 
+
 <script>
-  // 天气小贴士函数，返回英日双语提示
   function getWeatherTip(main) {
     switch(main.toLowerCase()) {
       case 'clear':
@@ -695,9 +988,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
     }
   }
 
-  // 获取天气数据并显示
   async function fetchWeather(city) {
-    const apiKey = 'fa540d847b8eab948b25ace6cadcf2de';  // 替换成你的API Key
+    const apiKey = 'fa540d847b8eab948b25ace6cadcf2de';
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=ja`;
 
     try {
@@ -709,7 +1001,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
       const descriptionEn = data.weather[0].main;
       const descriptionJp = data.weather[0].description;
       const temp = data.main.temp.toFixed(1);
-      const humidity = data.main.humidity;
       const tip = getWeatherTip(descriptionEn);
 
       return `<strong>${city}</strong><br>` +
@@ -717,23 +1008,21 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
        `気温 / Temperature: ${temp}°C<br>` +
        `<em style="color:#ffd700;">${tip}</em>`;
 
-
     } catch (error) {
       console.error('Fetch weather error:', error);
       return `<strong>${city}</strong><br>天気情報を取得できません`;
     }
   }
 
+  // ✅ 只保留东京
   async function updateWeather() {
     const tokyoWeather = await fetchWeather('Tokyo');
-    const aizuWeather = await fetchWeather('Ōtera');
 
-    document.getElementById('weather').innerHTML =
-      tokyoWeather + '<br>' + aizuWeather;
+    document.getElementById('weather').innerHTML = tokyoWeather;
   }
 
   updateWeather();
-  setInterval(updateWeather, 10 * 60 * 1000); // 每10分钟更新一次
+  setInterval(updateWeather, 10 * 60 * 1000);
 </script>
 
 	</body>
